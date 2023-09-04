@@ -1,0 +1,155 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Define fonts, colors, and common styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff; /* Change to your desired background color */
+  color: #333; /* Change to your desired text color */
+  text-align: center;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: transparent; /* Set the container background to transparent */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the logo */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  margin: 0 auto; /* Center the logo horizontally */
+  display: block; /* Make sure it's a block element for margin auto to work */
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Style post cards */
+.post-card {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  margin: 1em auto; /* Center the post cards horizontally */
+  max-width: 400px; /* Set a maximum width for the post cards */
+  text-align: left; /* Align text to the left */
+}
+
+/* Center-align text boxes and buttons */
+.text-box {
+  display: block;
+  margin: 0 auto;
+  width: 80%; /* Adjust the width as needed */
+  padding: 0.5em;
+  border: 1px solid #ccc; /* Add a border for styling */
+  border-radius: 4px;
+  font-size: 1em;
+  margin-bottom: 1em; /* Add some vertical spacing between text boxes */
+}
+
+.button-container {
+  text-align: center; /* Center-align buttons */
+}
+
+/* Style buttons */
+.button {
+  border: none;
+  background-color: #646cff;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  font-size: 1em;
+}
+
+.button:hover {
+  background-color: #535bf2;
+}
+
+
+/* Style post titles */
+.post-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333; /* Adjust color as needed */
+}
+
+/* Style post content */
+.post-content {
+  font-size: 1.2em;
+  color: #555; /* Adjust color as needed */
+}
+
+/* Style post metadata (e.g., author, date) */
+.post-metadata {
+  font-size: 1em;
+  color: #888; /* Adjust color as needed */
+}
+
+/* Apply styles to the container holding the posts */
+.post-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure posts wrap to the next row when there's not enough space */
+  justify-content: center; /* Center posts horizontally */
+}
+
+/* Apply styles to individual posts */
+.post {
+  flex: 1; /* Allow posts to grow to fill available space */
+  max-width: calc(33.333% - 2em); /* Adjust the width of each post as needed */
+}
+
+/* Adjust the spacing between posts as needed */
+.post + .post {
+  margin-left: 2em;
+}
+
+/* Add more specific styles for your components as needed */
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  display: inline-block; /* Display the links as blocks */
+  margin: 0 10px; /* Add horizontal spacing between links */
+  text-decoration: none;
+  color: #646cff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #535bf2;
+}
+
